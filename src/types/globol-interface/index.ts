@@ -1,15 +1,15 @@
 interface Heder{
-    title:string;
-    value:string;
+  title:string;
+  value:string;
 }
 interface Body {
-    id: string;
-    [key: string]:any;
+  id: number;
+  [key: string]:any;
 }
 
 export interface Props {
-  heders: Heder[];
-  body: Body[];
-  skelatonLoader: boolean;
-  deletIdData?:(id:string)=> any;
+heders: Heder[];
+body: Body[];
+skelatonLoader: boolean;
+deletIdData?:(id:string)=> any;
 }

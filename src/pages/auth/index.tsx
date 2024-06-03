@@ -96,6 +96,7 @@ export default function Index() {
             </Form>
           )}
         </Formik>
+        {/* <span className="text-blue-700 cursor-pointer" onClick={()=>(navigate("/signup"))}>Add new admin</span> */}
       </div>
     </div>
   );

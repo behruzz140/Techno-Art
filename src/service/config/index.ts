@@ -9,9 +9,9 @@ const request = axios.create({
 
 
 request.interceptors.request.use((config) => {
-    const access_token = getCookies("access_token") 
+    const access_token = getCookies("token") 
     if (access_token) {
-        config.headers["Authorization"] = access_token
+        config.headers["Authorization"] = `Bearer ${access_token}`
     }
     return config
 })
