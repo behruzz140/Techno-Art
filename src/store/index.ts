@@ -24,6 +24,29 @@ const useAuthStore = create(() => ({
       console.log(err);
     }
   },
+
+  getadmin: async (id:any) => {
+    try{
+      const res = await http.get(`/admin/${id}`)
+      if(res.status === 200){
+        return res;
+      }
+    }catch(err){
+      console.log(err)
+    }
+  },
+  deleteadmin: async (id:any) => {
+    try{
+      const res = await http.delete(`/admin/${id}`)
+      if(res.status === 204){
+        return res;
+      }
+    }catch(err){
+      console.log(err)
+    }
+  }
+
+
 }));
 
 export default useAuthStore;

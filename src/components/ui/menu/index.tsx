@@ -41,13 +41,11 @@ const handleSetting =()=>{
 
 
 
-//========================================================================
-
-
 
 
   return (
     <React.Fragment>
+      
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         
         <Tooltip title="Account settings">
@@ -98,19 +96,7 @@ const handleSetting =()=>{
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        {/* <MenuItem >
-          <Avatar /> Profile
-        </MenuItem>
-        <MenuItem >
-          <Avatar /> My account
-        </MenuItem>
-        <Divider />
-        <MenuItem >
-          <ListItemIcon>
-            <PersonAdd fontSize="small" />
-          </ListItemIcon>
-          Add another account
-        </MenuItem> */}
+      
         <MenuItem onClick={handleSetting}>
           <ListItemIcon>
             <Settings fontSize="small" />

@@ -10,7 +10,8 @@ import { Auth, Arror } from "../pages";
 import { HomeLayout } from "@layut";
 import Category from "../pages/category";
 import Brand from "../pages/brand";
-import Create from "../pages/create"
+import Create from "../pages/create";
+import Settings from "../pages/settings";
 const index = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -20,7 +21,7 @@ const index = () => {
         <Route path="/home/*" element={<HomeLayout />}>
           <Route index element={<Category />} />
           <Route path="brands" element={<Brand />} />
-          
+          <Route path="settings" element={<Settings/>}/>
           {/* <Route path="products" element={<Products />} />
               <Route path="products/:id" element={<ProductId />} />
               <Route path="workers" element={<Users />} /> */}

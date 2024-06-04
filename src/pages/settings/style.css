@@ -1,0 +1,60 @@
+.profile-body {
+    background-color: #f0f8ff;
+
+    
+    min-height: 84vh;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .blue-card .face {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .blue-card .face1,
+  .blue-card .face2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .blue-card .face1 {
+    background: #1e90ff; /* Dodger blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .blue-card .face2 {
+    background: #87cefa; /* Light blue background */
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card:hover .face1 {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .face2 {
+    transform: rotateY(360deg);
+  }
+  
